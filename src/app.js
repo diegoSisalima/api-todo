@@ -8,6 +8,7 @@ const UserServices = require("./Services/users.services");
 const { prototype } = require("./Services/users.services");
 //Importación de las variables de entorno (clase 1 de la semana 4)
 require("dotenv").config();
+app.use(express.json());
 const PORT = process.env.PORT || 8000;
 
 db.authenticate()
